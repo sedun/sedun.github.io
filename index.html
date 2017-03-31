@@ -36,7 +36,7 @@
       text-decoration: none;
     }
 
-	p, td, a, h1, h2, span{
+	p, td, a, h1, h2, h3, span{
 	  font-family: 'Nanum Gothic', sans-serif;
 	}
     
@@ -55,7 +55,7 @@
 .tg2 .tg-yw4l{vertical-align:top}
 .tg2 .tg-p5oz{background-color:#f9f9f9;text-align:right;vertical-align:top}
 
-    h1, h2 {
+    h1, h2, h3 {
       width: 100%;
       float: left;
     }
@@ -67,6 +67,7 @@
       letter-spacing: -4px;
       font-weight: 100;
     }
+
     h1 span {
       font-size: 26px;
       margin: 0 5px;
@@ -92,43 +93,24 @@
       font-size: 30px;
       margin-top: 15px;
     }
-    .skill, .framework {
-      margin: 20px 1%;
+    .skill, .framework, .license {
+      margin: 10px 1%;
       float: left;
-      width: 48%;
+      width: 30%;
       height: 105px;
       background: rgba(0,0,0,0.1);
       border: rgba(0,0,0,0.05) 5px solid;
       border-radius: 5px;
       padding:5px;
       color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
+      text-align: left;
       display: block;
+  	  text-align: center;
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
     }
-    .license {
-      margin: 20px 1%;
-      float: left;
-      width: 98%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      display: block;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-
+  
     code.skill {
       color: #7EC9E6;
     }
@@ -157,7 +139,7 @@
       color: white;
       margin: 0;
     }
-   
+ 
     .main h1.demo1 {
       background: #1ABC9C;
     }
@@ -282,10 +264,18 @@
     .main section.page1 h1 {
       text-align: left;
       padding: 0;
-      margin-bottom: 15px;
       font-size: 40px;
+      color:#A87B50;
+    }
+
+	 .main section.page1 h3 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 28px;
       color: black;
     }
+
     .main section.page1 h2 {
       color: rgba(0,0,0,0.85);
       text-align: left;
@@ -315,6 +305,14 @@
     .main section.page2 {
       background: #555557 url(back-phone.png) no-repeat center -150px ;
     }
+
+	.main section.page2 .page_container {
+      position: relative;
+      top: 20%;
+      margin: 0 auto 0;
+      max-width: 80%;
+      z-index: 3;
+    }
     .main section.page2 > img {
       position: absolute;
       top: -300px;
@@ -326,16 +324,17 @@
       overflow: hidden;
     }
     .main section.page2 h1 {
-      text-align: center;
+	  margin:20px 1%;
+	  text-align: left;
       padding: 0;
-      margin-bottom: 15px;
+	  margin-top:100px;
       font-size: 50px;
       letter-spacing: -1px;
       color: white;
     }
     .main section.page2 h2 {
       color: rgba(255,255,255,0.85);
-      text-align: center;
+      text-align: left;
       line-height: 100%;
       font-weight: 100;
 	  font-size: 20px;
@@ -344,13 +343,19 @@
 	.main section.page2 #skill {
 	  margin: 10px 1%;
       float: left;
-      width: 48%;
+      width: 30%;
 	  }
 
 	.main section.page2 #framework {
 	  margin: 10px 1%;
       float: left;
-      width: 48%;
+      width: 30%;
+	  }
+
+    .main section.page2 #license {
+	  margin: 10px 1%;
+      float: left;
+      width: 30%;
 	  }
 
     .viewing-page-2 .back{
@@ -445,7 +450,7 @@
       <section class="page1">
         <div class="page_container">
           <h1>About</h1>
-		  <h1>이상호</h1>
+		  <h3>이상호</h3>
 	  	  <img id="profile" src="profile.JPG" align="left" alt="profile"/>
 		  <h2>프론트앤드 개발자</h2>
 			<p class="credit"><a href="">아이소프트</a> 근무 (2010.06 ~ 2010.10)</p>
@@ -459,12 +464,12 @@
   	    <img id="section1_back" src="phones.png" alt="phones">
 
       </section>
-	    
 	    <section class="page2">
 	      <div class="page_container">
           <h1>Ability</h1>
           <h2 id="skill">skill</h2>
 		  <h2 id="framework">Framework / library</h2>
+          <h2 id="license">license</h2>
           <code class="skill">
 		  <br/>
   	         android, java, jsp, php, servlet<br/>
@@ -477,7 +482,6 @@
              jquery, jquery mobile<br/>
              AWS, GCM, FCM, google analytics<br/>
           </code>
-          <h2 id="license">license</h2>
 		  <code class="license">
 		  <br/>
 		     정보처리기사 : 한국산업인력공단 (2010.12)<br/>
