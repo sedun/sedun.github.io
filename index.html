@@ -92,7 +92,7 @@
       font-size: 30px;
       margin-top: 15px;
     }
-    code {
+    .skill, .framework {
       margin: 20px 1%;
       float: left;
       width: 48%;
@@ -110,12 +110,34 @@
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
     }
+    .license {
+      margin: 20px 1%;
+      float: left;
+      width: 98%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
     code.skill {
       color: #7EC9E6;
     }
     code.framework {
       color: #FFAD00;
     }
+	code.license{
+	  color: #67FF88;	
+	}
 
     .main {
       float: left;
@@ -247,15 +269,10 @@
       overflow: hidden;
     }
     
-    .main section > img {
-      position: absolute;
-      max-width: 100%;
-      z-index: 1;
-    }
-    
-	 .main section.page1 #section1_back {
+ 	 .main section.page1 #section1_back {
       position: absolute;
 	  top: 30%;
+	  right:5%;
       max-width: 100%;
       z-index: 1;
     }
@@ -460,34 +477,13 @@
              jquery, jquery mobile<br/>
              AWS, GCM, FCM, google analytics<br/>
           </code>
- 		  <h2>자격증</h2>
-<table class="tg2">
-  <tr>
-    <th class="tg-c57o">자격증/면허증</th>
-    <th class="tg-c57o">발행처/발행기관</th>
-    <th class="tg-c57o">합격구분</th>
-    <th class="tg-c57o">취득일</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">정보처리기사</td>
-    <td class="tg-yw4l">한국산업인력공단</td>
-    <td class="tg-yw4l">최종합격</td>
-    <td class="tg-yw4l">2010.12</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">OCA</td>
-    <td class="tg-yw4l">Oracle</td>
-    <td class="tg-yw4l">최종합격</td>
-    <td class="tg-yw4l">2010.05</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">ICDL Start certification</td>
-    <td class="tg-yw4l">한국생산성본부</td>
-    <td class="tg-yw4l">최종합격</td>
-    <td class="tg-yw4l">2007.06</td>
-  </tr>
-</table>
-
+          <h2 id="license">license</h2>
+		  <code class="license">
+		  <br/>
+		     정보처리기사 : 한국산업인력공단 (2010.12)<br/>
+             OCA        : Oracle (2010.05)<br/>
+             ICDL       : 한국생산성본부 (2007.06)<br/>
+          </code>
 	      </div>
       </section>
 	    
