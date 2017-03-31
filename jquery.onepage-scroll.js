@@ -423,4 +423,4 @@
   }
 
 
-}$(window.jQuery);
+}(window.jQuery);
