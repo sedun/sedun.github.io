@@ -6,7 +6,7 @@
 	<meta name="title" content="이상호 포트폴리오" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -251,6 +251,12 @@
       z-index: 1;
     }
     
+	 .main section.page1 #section1_back {
+      position: absolute;
+	  top: 30%;
+      max-width: 100%;
+      z-index: 1;
+    }
     .main section.page1 {
       background:rgb(230, 217, 200);
     }
@@ -431,7 +437,7 @@
 			<p class="credit"><a href="http://www.adzen.co.kr">애드젠</a> 근무 (2014.07 ~ 2017.02)</p>
 			<p class="credit">contact : <a href="mailto:sedun35@gmail.com">sedun35@gmail.com</a></p>
   	    </div>
-  	    <img src="http://blogfiles.naver.net/MjAxNzAzMzFfMjg5/MDAxNDkwOTMxODk2ODI1.W3DpH0ZWu04EEu922mTFDKE3VH-clVyod9nlSdAvvtsg._mnKPfLrN2lwRwHDx93FosYwtOt8e0td6QF-R-5YC6Yg.PNG.sedun/phones.png" alt="phones">
+  	    <img id="section1_back" src="http://blogfiles.naver.net/MjAxNzAzMzFfMjg5/MDAxNDkwOTMxODk2ODI1.W3DpH0ZWu04EEu922mTFDKE3VH-clVyod9nlSdAvvtsg._mnKPfLrN2lwRwHDx93FosYwtOt8e0td6QF-R-5YC6Yg.PNG.sedun/phones.png" alt="phones">
 
       </section>
 	    
@@ -603,6 +609,7 @@
 	</section>
     </div>
     <a class="back">배움에는 낮은 자세로 맡은일은 성실히</a>
+    
   </div>
 </body>
 </html>
