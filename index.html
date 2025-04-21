@@ -1,617 +1,220 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<title>이상호 포트폴리오</title>
-	<meta name="title" content="이상호 포트폴리오" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <style>
-	@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-    html {
-      height: 100%;
-    }
-    body {
-      background: #E2E4E7;
-      padding: 0;
-      text-align: center;
-      position: relative;
-      margin: 0;
-      height: 100%;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    .wrapper {
-    	height: 100% !important;
-    	height: 100%;
-    	margin: 0 auto; 
-    	overflow: hidden;
-    }
-    
-    a {
-      text-decoration: none;
-    }
-
-	p, td, a, h1, h2, h3, span{
-	  font-family: 'Nanum Gothic', sans-serif;
-	}
-    
-	.tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-    .tg th{font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-    .tg .tg-c57o{background-color:#ecf4ff;vertical-align:top}
-    .tg .tg-yw4l{vertical-align:top}
-    
-.tg2  {margin:auto;border-collapse:collapse;border-spacing:0;border-color:#ccc;}
-.tg2 td{font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-.tg2 th{font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-.tg2 .tg-baqh{text-align:center;vertical-align:top}
-.tg2 .tg-lqy6{text-align:right;vertical-align:top}
-.tg2 .tg-b7b8{background-color:#f9f9f9;vertical-align:top}
-.tg2 .tg-yw4l{vertical-align:top}
-.tg2 .tg-p5oz{background-color:#f9f9f9;text-align:right;vertical-align:top}
-
-    h1, h2, h3 {
-      width: 100%;
-      float: left;
-    }
-    h1 {
-      margin-top: 100px;
-      color: #000;
-      margin-bottom: 5px;
-      font-size: 70px;
-      letter-spacing: -4px;
-      font-weight: 100;
-    }
-
-    h1 span {
-      font-size: 26px;
-      margin: 0 5px;
-      text-transform: capitalize;
-      background: rgba(0,0,0,0.85);
-      display: inline-block;
-      color: #6D461D;
-      border-radius: 5px 5px;
-      -webkit-border-radius: 5px 5px;
-      -moz-border-radius: 5px 5px;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-      padding: 3px 10px;
-    }
-    h2 {
-      color: #6D461D;
-      font-weight: 100;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-    
-    .pointer {
-      color: #9b59b6;
-      font-size: 30px;
-      margin-top: 15px;
-    }
-    .skill, .framework, .license {
-      margin: 10px 1%;
-      float: left;
-      width: 30%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: left;
-      display: block;
-  	  text-align: center;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-  
-    code.skill {
-      color: #7EC9E6;
-    }
-    code.framework {
-      color: #FFAD00;
-    }
-	code.license{
-	  color: #67FF88;	
-	}
-
-    .main {
-      float: left;
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .main h1 {
-      padding:150px 50px;
-      float: left;
-      width: 100%;
-      font-size: 45px;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      font-weight: 100;
-      color: white;
-      margin: 0;
-    }
- 
-    .main h1.demo1 {
-      background: #1ABC9C;
-    }
-    
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-    
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
-    }
-    
-    .reload, .btn{
-      display: inline-block;
-      border: 4px solid #A2261E;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      background: #CC3126;
-      display: inline-block;
-      line-height: 100%;
-      padding: 0.7em;
-      text-decoration: none;
-      color: #fff;
-      width: 100px;
-      line-height: 140%;
-      font-size: 17px;
-      font-weight: bold;
-    }
-    .reload:hover{
-      background: #444;
-    }
-    .btn {
-      width: 200px;
-      color: rgb(255, 255, 255);
-      border: 4px solid rgb(0, 0, 0);
-      background: rgba(3, 3, 3, 0.75);
-    }
-    .clear {
-      width: auto;
-    }
-    .btn:hover, .btn:hover {
-      background: #444;
-    }
-    .btns {
-      width: 410px;
-      margin: 50px auto;
-    }
-    .credit {
-      text-align: center;
-      color: rgba(0,0,0,0.5);
-      padding: 10px;
-      width: 410px;
-      clear: both;
-    }
-    .credit a {
-      color: rgba(0,0,0,0.85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-    
-    .back {
-      position: absolute;
-      top: 0;
-	  margin:0;
-      left: 0;
-      text-align: center;
-      display: block;
-      padding: 7px;
-      width: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      background: rgba(255, 255, 255, 0.25);
-      font-weight: bold;
-      font-size: 13px;
-      color: #000;
-      -webkit-transition: all 500ms ease-in-out;
-      -moz-transition: all 500ms ease-in-out;
-      -o-transition: all 500ms ease-in-out;
-      transition: all 500ms ease-in-out;
-    }
-    .back:hover {
-      color: black;
-      background: rgba(255, 255, 255, 0.5);
-    }
-    
-    header {
-      position: relative;
-      z-index: 10;
-    }
-    .main section .page_container {
-      position: relative;
-      top: 20%;
-      margin: 0 auto 0;
-      max-width: 950px;
-      z-index: 3;
-    }
-    .main section  {
-      overflow: hidden;
-    }
-    
- 	 .main section.page1 #section1_back {
-      position: absolute;
-	  top: 30%;
-	  right:5%;
-      max-width: 100%;
-      z-index: 1;
-    }
-    .main section.page1 {
-      background:rgb(230, 217, 200);
-    }
-    .main section.page1 h1 {
-      text-align: left;
-      padding: 0;
-      font-size: 40px;
-      color:#A87B50;
-    }
-
-	 .main section.page1 h3 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 28px;
-      color: black;
-    }
-
-    .main section.page1 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      line-height: 160%;
-    }
-
-    .main section.page1 p {
-      text-align: left;
-      padding: 0;
-    }
-
-	.main section.page1 #profile{
-	 width : 135px;
-	 height : 180px;
-     margin: 0 0 20px 10px;
-	 }
-
-    .main section .page_container .btns {
-      clear: both;
-      float: left;
-      text-align: center;
-      width: 435px;
-    }
-    .main section .page_container .btns a{
-      text-align: center;
-    }
-    .main section.page2 {
-      background: #555557 url(back-phone.png) no-repeat center -150px ;
-    }
-
-	.main section.page2 .page_container {
-      position: relative;
-      top: 20%;
-      margin: 0 auto 0;
-      max-width: 80%;
-      z-index: 3;
-    }
-    .main section.page2 > img {
-      position: absolute;
-      top: -300px;
-      left: 50%;
-      margin-left: -1095px;
-    }
-    .main section.page2 .page_container {
-      margin-top: 240px;
-      overflow: hidden;
-    }
-    .main section.page2 h1 {
-	  margin:20px 1%;
-	  text-align: left;
-      padding: 0;
-	  margin-top:100px;
-      font-size: 50px;
-      letter-spacing: -1px;
-      color: white;
-    }
-    .main section.page2 h2 {
-      color: rgba(255,255,255,0.85);
-      text-align: left;
-      line-height: 100%;
-      font-weight: 100;
-	  font-size: 20px;
-    }
-
-	.main section.page2 #skill {
-	  margin: 10px 1%;
-      float: left;
-      width: 30%;
-	  }
-
-	.main section.page2 #framework {
-	  margin: 10px 1%;
-      float: left;
-      width: 30%;
-	  }
-
-    .main section.page2 #license {
-	  margin: 10px 1%;
-      float: left;
-      width: 30%;
-	  }
-
-    .viewing-page-2 .back{
-      background: rgba(0, 0, 0, 0.25);
-      color: #FFF;
-      }
-    .main section.page3 {
-      background:url(tilted-phone.png) no-repeat 156px -150px ;
-    }
-    .main section.page3 .page_container {
-      overflow: hidden;
-      width: 100%;
-      right: -80px;
-    }
-    .main section.page3 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 20px;
-      font-size: 40px;
-      letter-spacing: -1px;
-      color: black;
-    }
-    .main section.page3 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      line-height: 160%;
-      font-weight: 100;
-      font-size: 21px;
-    }
-    
-    body.disabled-onepage-scroll .onepage-wrapper  section {
-      min-height: 100%;
-      height: auto;
-    }
-    
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
-      padding: 20px;
-      margin-top: 100px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    
-    body.disabled-onepage-scroll  section .page_container h1{
-      text-align: center;
-      font-size: 50px;
-    }
-    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
-      text-align: center;
-      width: 100%;
-    }
-    
-    body.disabled-onepage-scroll .main section.page1 > img {
-      position: absolute;
-      width: 80%;
-      left: 10%;
-    }
-    
-    body.disabled-onepage-scroll .main section > img {
-      position: relative;
-      max-width: 80%;
-      bottom: 0;
-    }
-    body.disabled-onepage-scroll code {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-    
-    body.disabled-onepage-scroll .main section.page3 .page_container {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      right: 0;
-    }
-	</style>
-	<script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-		});
-		
-	</script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이상호 | 프론트엔드 개발자 포트폴리오</title>
+    <meta name="description" content="프론트엔드 개발자 이상호의 경력, 기술 스택, 프로젝트 경험을 소개하는 포트폴리오입니다.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-  <div class="wrapper">
-	  <div class="main">
-      <section class="page1">
-        <div class="page_container">
-          <h1>About</h1>
-		  <h3>이상호</h3>
-	  	  <img id="profile" src="profile.JPG" align="left" alt="profile"/>
-		  <h2>프론트앤드 개발자</h2>
-			<p class="credit"><a href="">아이소프트</a> 근무 (2010.06 ~ 2010.10)</p>
-			<p class="credit"><a href="http://www.masancity.co.kr/">컴앤피플</a> 근무 (2011.03 ~ 2011.05)</p>
-			<p class="credit"><a href="http://www.iconnect.co.kr">아이커넥트</a> 근무 (2011.05 ~ 2013.05)</p>
-			<p class="credit"><a href="">아람벤처스</a> 프리렌서 (2013.05 ~ 2014.02)</p>
-			<p class="credit"><a href="http://www.itfact.co.kr">ITFACT</a> 근무 (2014.04 ~ 2014.07)</p>
-			<p class="credit"><a href="http://www.adzen.co.kr">애드젠</a> 근무 (2014.07 ~ 2017.02)</p>
-			<p class="credit">contact : <a href="mailto:sedun35@gmail.com">sedun35@gmail.com</a></p>
-  	    </div>
-  	    <img id="section1_back" src="phones.png" alt="phones">
+    <header>
+        <nav class="container">
+            <a href="#hero" class="logo">이상호 | 포트폴리오</a>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">기술</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      </section>
-	    <section class="page2">
-	      <div class="page_container">
-          <h1>Ability</h1>
-          <h2 id="skill">skill</h2>
-		  <h2 id="framework">Framework / library</h2>
-          <h2 id="license">license</h2>
-          <code class="skill">
-		  <br/>
-  	         android, java, jsp, php, servlet<br/>
-			 html, css, javascript<br/>
-			 mysql, oracle, mongodb, redis, sqlite<br/>
-  	      </code>
-  	      <code class="framework">
-		  <br/>
-		     vollery, fresco, rest<br/>
-             jquery, jquery mobile<br/>
-             AWS, GCM, FCM, google analytics<br/>
-          </code>
-		  <code class="license">
-		  <br/>
-		     정보처리기사 : 한국산업인력공단 (2010.12)<br/>
-             OCA        : Oracle (2010.05)<br/>
-             ICDL       : 한국생산성본부 (2007.06)<br/>
-          </code>
-	      </div>
-      </section>
-	    
-	  <section class="page3">
-	   <div class="page_container">
-          <h1>Project</h1>
-<table class="tg">
-  <tr>
-    <th class="tg-c57o">프로젝트명</th>
-    <th class="tg-c57o">참여기간</th>
-    <th class="tg-c57o">고객사</th>
-    <th class="tg-c57o">역할</th>
-    <th class="tg-c57o">수행업무</th>
-    <th class="tg-c57o">개발환경</th>
-    <th class="tg-c57o">사용기술/언어</th>
-    <th class="tg-c57o">통신기술/기타부분</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">안드로이드어플 애니그램 개발</td>
-    <td class="tg-yw4l">2014.07~
-2017.02
-</td>
-    <td class="tg-yw4l">Adzen</td>
-    <td class="tg-yw4l">PG</td>
-    <td class="tg-yw4l">안드로이드 개발</td>
-    <td class="tg-yw4l">android</td>
-    <td class="tg-yw4l">android, GCM, FCM, vollery, fresco, redis, rabbitmq</td>
-    <td class="tg-yw4l">apache, tomcat</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">안드로이드어플 개발(119안전재단)</td>
-    <td class="tg-yw4l">2014.04~
-2014.07
-</td>
-    <td class="tg-yw4l">ITFACT</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">안드로이드 개발,
-웹페이지 개발	android
-</td>
-    <td class="tg-yw4l">android</td>
-    <td class="tg-yw4l">android, grails</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">안드로이드어플 개발(스코어보드, 급식톡)</td>
-    <td class="tg-yw4l">2013.05~
-2014.01
-</td>
-    <td class="tg-yw4l">아람벤처스</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">서버 구축, rdbms설계, 관리자 페이지 구축</td>
-    <td class="tg-yw4l">Win2008</td>
-    <td class="tg-yw4l">jsp, java, servlet, mysql</td>
-    <td class="tg-yw4l">apache, tomcat</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">아이콘 스타일 개발(안드로이드 어플)</td>
-    <td class="tg-yw4l">2011.05~
-2013.05
-</td>
-    <td class="tg-yw4l">아이커넥트</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">안드로이드 UI, 기능, 통신 구현</td>
-    <td class="tg-yw4l">android</td>
-    <td class="tg-yw4l">android, java, servlet</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">빨리 연락해(안드로이드 어플)</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-	<td class="tg-yw4l">안드로이드 개발, 서버 통신 구현</td>
-    <td class="tg-yw4l">android</td>
-    <td class="tg-yw4l">android, java</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">테마봇(안드로이드 테마 관리 시스템)</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">파일 업로드 및 다운로드 구현, 관리 시스템 구축</td>
-    <td class="tg-yw4l">win2003</td>
-    <td class="tg-yw4l">java, jsp, mysql, jquery</td>
-    <td class="tg-yw4l">apach, tomcat</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">배꼽아파(커뮤니티 사이트)</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">카테고리별 커뮤니티 페이지 구축, SNS형 게시판, nosql 데이터 베이스 설계 및 구현</td>
-    <td class="tg-yw4l">Linux</td>
-    <td class="tg-yw4l">java, jsp, mongodb, jquery</td>
-    <td class="tg-yw4l">apache, tomcat</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">아이스타트(하이브리드 어플)</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">웹뷰 페이지 개발, 관리자 페이지 개발</td>
-    <td class="tg-yw4l">Linux</td>
-    <td class="tg-yw4l">php, mysql, javascript</td>
-    <td class="tg-yw4l">apache</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">관공서 사이트 개발</td>
-    <td class="tg-yw4l">2011.03~
-	2011.05</td>
-    <td class="tg-yw4l">창원도청</td>
-    <td class="tg-yw4l">‘’</td>
-    <td class="tg-yw4l">도민체전 사이트 개발, 경남의 걷고 싶은길 사이트 개발</td>
-    <td class="tg-yw4l">Linux, Win2003</td>
-    <td class="tg-yw4l">java, php, mssql</td>
-    <td class="tg-yw4l">IIS</td>
-  </tr>
-</table>
-</div>
-	</section>
-    </div>
-    <a class="back">배움에는 낮은 자세로 맡은일은 성실히</a>
-    
-  </div>
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>이상호</h1>
+                    <h2>프론트엔드 개발자</h2>
+                    <p class="tagline">배움에는 낮은 자세로, 맡은 일은 성실히 수행합니다.</p>
+                    <a href="#projects" class="cta-button">프로젝트 보기</a>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.JPG" alt="이상호 프로필 사진">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2><span class="section-highlight">About</span> Me</h2>
+            <div class="experience-timeline">
+                <h3>경력사항</h3>
+                <ul>
+                    <li><span>2014.07 ~ 2017.02</span><strong>애드젠 (Adzen)</strong></li>
+                    <li><span>2014.04 ~ 2014.07</span><strong>ITFACT</strong></li>
+                    <li><span>2013.05 ~ 2014.02</span><strong>아람벤처스</strong> (프리랜서)</li>
+                    <li><span>2011.05 ~ 2013.05</span><strong>아이커넥트 (iConnect)</strong></li>
+                    <li><span>2011.03 ~ 2011.05</span><strong>컴앤피플 (Com&People)</strong></li>
+                    <li><span>2010.06 ~ 2010.10</span><strong>아이소프트 (I-Soft)</strong></li>
+                 </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                 <h2>My <span class="section-highlight">Skills</span></h2>
+                 <div class="skills-grid">
+                     <div class="skill-category">
+                         <h3>💻 Programming &amp; Web</h3>
+                         <ul>
+                            <li>Android (Java)</li>
+                            <li>JSP / Servlet</li>
+                            <li>PHP</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                         <h3>🗃️ Database</h3>
+                         <ul>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                            <li>MongoDB</li>
+                            <li>Redis</li>
+                            <li>SQLite</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                         <h3>🔧 Frameworks &amp; Libraries</h3>
+                         <ul>
+                            <li>Volley, Fresco (Android)</li>
+                            <li>REST API</li>
+                            <li>jQuery / jQuery Mobile</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                        <h3>☁️ Platforms &amp; Tools</h3>
+                        <ul>
+                           <li>AWS</li>
+                           <li>GCM / FCM</li>
+                           <li>Google Analytics</li>
+                           <li>Git</li>
+                           <li>Apache / Tomcat</li>
+                       </ul>
+                    </div>
+                     <div class="skill-category">
+                        <h3>📜 Licenses</h3>
+                         <ul>
+                            <li>정보처리기사 (2010.12)</li>
+                            <li>OCA (Oracle Certified Associate, 2010.05)</li>
+                            <li>ICDL (2007.06)</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Featured <span class="section-highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>안드로이드 앱 '애니그램' 개발</h4>
+                    <p class="project-period">2014.07 ~ 2017.02 | Adzen</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 안드로이드 앱 기능 개발 및 유지보수</p>
+                    <div class="project-tags">
+                        <span>Android</span><span>Java</span><span>GCM/FCM</span><span>Volley</span><span>Fresco</span><span>Redis</span><span>RabbitMQ</span><span>Apache</span><span>Tomcat</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4>119안전재단 안드로이드 앱 개발</h4>
+                    <p class="project-period">2014.04 ~ 2014.07 | ITFACT</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 안드로이드 앱 개발 및 웹 페이지 개발</p>
+                    <div class="project-tags">
+                        <span>Android</span><span>Java</span><span>Grails</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4>'스코어보드', '급식톡' 앱 개발</h4>
+                    <p class="project-period">2013.05 ~ 2014.01 | 아람벤처스</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 서버 구축, RDBMS 설계, 관리자 페이지 개발</p>
+                    <div class="project-tags">
+                        <span>JSP</span><span>Java</span><span>Servlet</span><span>MySQL</span><span>Win Server</span><span>Apache</span><span>Tomcat</span>
+                    </div>
+                </div>
+
+                 <div class="project-card">
+                    <h4>'아이콘 스타일' 안드로이드 앱 개발</h4>
+                    <p class="project-period">2011.05 ~ 2013.05 | 아이커넥트</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 안드로이드 UI, 기능, 통신 구현</p>
+                    <div class="project-tags">
+                        <span>Android</span><span>Java</span><span>Servlet</span>
+                    </div>
+                </div>
+
+                 <div class="project-card">
+                    <h4>'빨리 연락해' 안드로이드 앱 개발</h4>
+                    <p class="project-period">2011.05 ~ 2013.05 | 아이커넥트</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 안드로이드 앱 개발, 서버 통신 구현</p>
+                    <div class="project-tags">
+                        <span>Android</span><span>Java</span>
+                    </div>
+                </div>
+
+                 <div class="project-card">
+                    <h4>'테마봇' 안드로이드 테마 관리 시스템</h4>
+                    <p class="project-period">2011.05 ~ 2013.05 | 아이커넥트</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 파일 업/다운로드 구현, 관리 시스템 구축</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>JSP</span><span>MySQL</span><span>jQuery</span><span>Apache</span><span>Tomcat</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4>커뮤니티 사이트 '배꼽아파' 개발</h4>
+                    <p class="project-period">2011.05 ~ 2013.05 | 아이커넥트</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 커뮤니티 페이지, SNS형 게시판, NoSQL DB 설계/구현</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>JSP</span><span>MongoDB</span><span>jQuery</span><span>Linux</span><span>Apache</span><span>Tomcat</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4>하이브리드 앱 '아이스타트' 개발</h4>
+                    <p class="project-period">2011.05 ~ 2013.05 | 아이커넥트</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 웹뷰 페이지 및 관리자 페이지 개발</p>
+                    <div class="project-tags">
+                        <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Hybrid App</span><span>Linux</span><span>Apache</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h4>관공서 사이트 개발 (창원도청)</h4>
+                    <p class="project-period">2011.03 ~ 2011.05 | 창원도청 (Client)</p>
+                    <p class="project-role">역할: PG</p>
+                    <p class="project-desc">주요 업무: 도민체전 사이트, 경남의 걷고 싶은 길 사이트 개발</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>PHP</span><span>MSSQL</span><span>IIS</span>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="container">
+             <h2><span class="section-highlight">Contact</span> Me</h2>
+             <p>함께 일할 기회를 찾고 있습니다. 아래 이메일로 연락주세요.</p>
+             <a href="mailto:sedun35@gmail.com" class="email-link">sedun35@gmail.com</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 이상호. All rights reserved.</p>
+            </div>
+    </footer>
+
 </body>
 </html>
